@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* background: #c6faf1; */
+}
+body {
+	background: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.map {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+	width: 300px;
+	height: 300px;
+	border: 2px solid gray;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 30px;
+	line-height: 2rem;
+	background: #001524;
+	color: #8cd790;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+	box-shadow: 5px 8px 5px #000000;
+	transform: translate(10px);
+	font-size: 1.2rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+	display: block;
+	text-align: center;
+	font-family: 'Lobster';
+	font-size: 1.5rem;
+	border: 2px solid rgba(236, 229, 229, 0.39);
+	box-shadow: 5px 6px 8px gray;
+	height: 5rem;
+	margin-bottom: 10px;
+	background: magenta;
 }
